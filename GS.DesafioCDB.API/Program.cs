@@ -9,8 +9,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<ICalculadoraCdb, CalculadoraCdb>();
-builder.Services.AddScoped<ICalculadoraIr, CalculadoraIr>();
+builder.Services.AddScoped<ICalculadoraCdbService, CalculadoraCdbService>();
+builder.Services.AddScoped<ICalculadoraIrService, CalculadoraIrService>();
 
 var app = builder.Build();
 

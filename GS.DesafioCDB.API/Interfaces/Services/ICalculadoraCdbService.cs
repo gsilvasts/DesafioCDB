@@ -2,7 +2,7 @@
 
 namespace GS.DesafioCDB.API.Interfaces.Services
 {
-    public interface ICalculadoraCdb
+    public interface ICalculadoraCdbService
     {
         /// <summary>
         /// Calcula o valor liquido do CDB
@@ -10,6 +10,6 @@ namespace GS.DesafioCDB.API.Interfaces.Services
         /// <param name="valor"></param>
         /// <param name="meses"></param>
         /// <returns></returns>
-        Investimento CalcularValorCDB(decimal valor, int meses);
+        Task<Investimento> CalcularValorCDB(decimal valor, int meses);
     }
 }

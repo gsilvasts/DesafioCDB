@@ -2,13 +2,13 @@
 
 namespace GS.DesafioCDB.API.Services
 {
-    public class CalculadoraIr : ICalculadoraIr
+    public class CalculadoraIrService : ICalculadoraIrService
     {
-        public decimal CalcularImposto(decimal valor, int meses)
+        public async Task<decimal> CalcularImposto(decimal valor, int meses)
         {
             decimal taxaImposto = PegarTaxaIR(meses);
 
-            return valor * (taxaImposto / 100);
+            return await Task.FromResult(valor * (taxaImposto / 100));
         }
 
         private decimal PegarTaxaIR(int meses)
