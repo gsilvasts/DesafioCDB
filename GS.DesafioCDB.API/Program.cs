@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICalculadoraCdb, CalculadoraCdb>();
+builder.Services.AddScoped<ICalculadoraIr, CalculadoraIr>();
 
 var app = builder.Build();
 
