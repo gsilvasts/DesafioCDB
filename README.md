@@ -36,5 +36,10 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 ## Como Usar
 
 1. No aplicativo Angular, insira o valor inicial do investimento (em reais) e o número de meses para o resgate.
+
+   ![image](https://github.com/gsilvasts/DesafioCDB/assets/17418160/ec425bf5-82e3-41ee-9dd4-eef6a178821a)
+
 2. Clique no botão "Calcular" para calcular o investimento CDB.
 3. Os resultados, incluindo o valor bruto e líquido do CDB, serão exibidos na tela.
+
+![image](https://github.com/gsilvasts/DesafioCDB/assets/17418160/544ba7f5-8e8f-474c-9ffe-b0c1cec88818)
