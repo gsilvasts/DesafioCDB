@@ -24,11 +24,11 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 4. O aplicativo estará disponível em `http://localhost:4200`. Abra seu navegador e acesse esta URL para usar a calculadora de investimento CDB.
 5. Certifique-se de que a API ASP.NET Core esteja em execução enquanto usa o aplicativo Angular.
 
-##Executando o Projeto pelo Visual Studio
+## Executando o Projeto pelo Visual Studio
 
 1. Altere a execução para multiplos projetos incluindo a API e o projeto WebApp
    ![image](https://github.com/gsilvasts/DesafioCDB/assets/17418160/63e8f9f6-ac4e-4703-b561-473e8ab435cd)
-2. Execute os projetos
+2. Execute os projetos   
    ![image](https://github.com/gsilvasts/DesafioCDB/assets/17418160/90d136f9-7e4e-4d64-826c-d652198c062c)
 3. A API estará disponível em `https://localhost:5001`
 4. O aplicativo estará disponível em `http://localhost:4200`. Abra seu navegador e acesse esta URL para usar a calculadora de investimento CDB.
