@@ -2,11 +2,9 @@
 using GS.DesafioCDB.API.Models;
 using GS.DesafioCDB.API.Services;
 using Moq;
-using Xunit;
 
-namespace GS.DesafioCDB.Test
+namespace GS.DesafioCDB.Tests
 {
-
     public class CalculadoraCdbTests
     {
         [Theory]
@@ -18,9 +16,9 @@ namespace GS.DesafioCDB.Test
         {
             //Arrange           
             var investimento = new Investimento(investimentoInicial, meses, 1100m, 1090m, 100m, 10m);
-            
+
             var calculadoraIrMock = new Mock<ICalculadoraIrService>();
-            calculadoraIrMock.Setup(x=>x.CalcularImposto(investimento.RendimentoBruto, meses))
+            calculadoraIrMock.Setup(x => x.CalcularImposto(It.IsAny<decimal>(), It.IsAny<int>()))
                 .ReturnsAsync(imposto);
 
             var service = new CalculadoraCdbService(calculadoraIrMock.Object);

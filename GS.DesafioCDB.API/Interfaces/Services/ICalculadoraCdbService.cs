@@ -10,6 +10,6 @@ namespace GS.DesafioCDB.API.Interfaces.Services
         /// <param name="valor"></param>
         /// <param name="meses"></param>
         /// <returns></returns>
-        Task<Investimento> CalcularValorCDB(decimal valor, int meses);
+        Task<Investimento> CalcularValorCDB(decimal investimentoInicial, int meses);
     }
 }

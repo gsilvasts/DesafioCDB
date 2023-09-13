@@ -28,7 +28,7 @@ namespace GS.DesafioCDB.API.Services
 
             decimal imposto = await _calculadoraIr.CalcularImposto(rendimentoBruto, meses);
 
-            return new Investimento(investimentoInicial, meses, valorCdb.DuasCasasDecimais(), (valorCdb - imposto).DuasCasasDecimais(), rendimentoBruto, imposto);
+            return new Investimento(investimentoInicial, meses, valorCdb.DuasCasasDecimais(), (valorCdb - imposto).DuasCasasDecimais(), rendimentoBruto.DuasCasasDecimais(), imposto.DuasCasasDecimais());
         }
                 
     }
