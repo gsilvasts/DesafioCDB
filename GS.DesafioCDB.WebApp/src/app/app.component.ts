@@ -24,7 +24,7 @@ export class AppComponent {
     }
 
     if(this.meses <= 1){
-      alert('A quantidade de meses de investimento deve ser maior 0.');
+      alert('A quantidade de meses de investimento deve ser maior 1.');
       return;
     }
 

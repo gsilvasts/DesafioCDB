@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InvestmentService {
-  private apiUrl = 'https://localhost:7126/api/cdb';
+  private apiUrl = 'https://localhost:5001/api/cdb';
 
   constructor(private http: HttpClient) { }
 
