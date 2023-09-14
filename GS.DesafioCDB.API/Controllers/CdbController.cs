@@ -17,9 +17,14 @@ namespace GS.DesafioCDB.API.Controllers
         [HttpGet("{investimentoInicial}/{meses}")]
         public async Task<IActionResult> CalcularCdb(decimal investimentoInicial, int meses)
         {
-            if (investimentoInicial <= 0 || meses <= 0)
+            if (investimentoInicial <= 0)
             {
-                return BadRequest("Informe um valor válido para o investimento e para a quantidade de meses da aplicação.");
+                return BadRequest("Informe um valor válido para o investimento inicial.");
+            }
+
+            if (meses <= 1)
+            {
+                return BadRequest("A aplicação mínima tem que ser maior 1 meses.");
             }
 
             var retorno = await _calculadora.CalcularValorCDB(investimentoInicial, meses);
