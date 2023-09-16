@@ -32,12 +32,15 @@ namespace GS.DesafioCDB.Tests
             Assert.Equal(investimentoInicial, resultValue?.InvestimentoInicial);
         }
 
-        [Fact]
-        public async Task CalcularCdb_RetornarBadRequest()
+        [Theory]
+        [InlineData(0, 6)]
+        [InlineData(0, 1)]
+        [InlineData(1000, 1)]
+        [InlineData(1000, 0)]
+        [InlineData(0, 0)]
+        public async Task CalcularCdb_RetornarBadRequest(decimal investimentoInicial, int meses)
         {
-            //Arrange
-            var investimentoInicial = 1000m;
-            var meses = 0;
+            //Arrange  
             var investimento = new Investimento(investimentoInicial, meses, 1100m, 1090m, 100m, 10m);
             var calculadoraCdbMock = new Mock<ICalculadoraCdbService>();
 
